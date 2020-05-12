@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 	bool crouch = false;
 	
 	
+	
 	// Update is called once per frame
 	void Update () {
 
@@ -35,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
 		{
 			crouch = false;
 		}
-
 	}
 	public void OnLanding()
 	{
@@ -61,4 +61,5 @@ public class PlayerMovement : MonoBehaviour
 			Destroy(other.gameObject);
 		}
 	}
+	
 }
