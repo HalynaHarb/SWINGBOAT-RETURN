@@ -19,7 +19,7 @@ public class Spikes : MonoBehaviour {
  
                         player.TakeDamage(3);
  
-                        StartCoroutine(player.Knockback(0.02f, 350, player.transform.position));
+                        //StartCoroutine(player.Knockback(0.02f, 350, player.transform.position));
  
                 }
  
