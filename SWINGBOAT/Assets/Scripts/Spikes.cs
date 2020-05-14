@@ -17,7 +17,7 @@ public class Spikes : MonoBehaviour {
  
                 if(col.CompareTag("Player")){
  
-                        player.TakeDamage(3);
+                        player.TakeDamage(30);
  
                         //StartCoroutine(player.Knockback(0.02f, 350, player.transform.position));
  
