@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public bool MoveRight;
     public float speed;
     int currentHealth;
+    
     // Start is called before the first frame update
     void Start()
     {

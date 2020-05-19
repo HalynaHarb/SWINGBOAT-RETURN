@@ -6,7 +6,6 @@ using UnityEngine;
 public class Spikes : MonoBehaviour {
  
         private Player player;
- 
         void Start(){
  
                 player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -19,7 +18,7 @@ public class Spikes : MonoBehaviour {
  
                         player.TakeDamage(30);
  
-                        //StartCoroutine(player.Knockback(0.02f, 350, player.transform.position));
+                        StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
  
                 }
  

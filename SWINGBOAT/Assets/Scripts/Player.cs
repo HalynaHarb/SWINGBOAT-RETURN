@@ -7,8 +7,11 @@ public class Player : MonoBehaviour
 
 	public int maxHealth = 100;
 	public int currentHealth;
-
+	public Animator animator;
+	private Rigidbody2D rb2d;
 	public HealthBar healthBar;
+	public float respawnDelay;
+	
 
     // Start is called before the first frame update
     void Start()
@@ -17,20 +20,58 @@ public class Player : MonoBehaviour
 		healthBar.SetMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.Space))
+		/*if (Input.GetKeyDown(KeyCode.Space))
 		{
 			TakeDamage(20);
+		}*/
+		if(currentHealth > maxHealth) {
+			currentHealth = maxHealth;
 		}
+
+		if(currentHealth <= 0) {
+			currentHealth = 0;
+			GameObject.Find("Player").GetComponent<CharacterController2D>().enabled = false;
+			GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+			Die();
+		}
+
     }
 
 	public void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
+		animator.SetTrigger("Hurt");
+  
+        if (currentHealth <=0)
+        {
+            Die();
+        }
 
 		healthBar.SetHealth(currentHealth);
 	}
+	void Die() {
+		Debug.Log("Player died!");
+        animator.SetBool("IsDead", true);
+		Respawn();
+		
+	}
+	public void Respawn(){
+		StartCoroutine("RespawnCoroutine");
+	}
+	public IEnumerator RespawnCoroutine(){
+		yield return new WaitForSeconds(respawnDelay);
+		Application.LoadLevel(Application.loadedLevel);
+	}
+	public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir) {
+		float timer = 0;
+		while (knockDur > timer) {
+			timer +=Time.deltaTime;
+			//rb2d.AddForce(new Vector3(knockbackDir.x *-2000, knockbackDir.y*knockbackPwr, transform.position.z));
+		}
+		yield return 0;
+	}
+	
 	
 }
