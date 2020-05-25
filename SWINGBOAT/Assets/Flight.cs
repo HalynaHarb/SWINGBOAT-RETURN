@@ -2,21 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flight : Enemy
+public class Flight : MonoBehaviour
 {
-    protected Animator animator;
-
-    protected virtual void Start()
+    public Animator animator;
+    public int maxHealth = 100;
+    int currentHealth;
+    
+    // Start is called before the first frame update
+    void Start()
     {
-        animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
-    public void JumpedOn()
+    void Update () 
     {
-        animator.SetTrigger("Death");
+
     }
-    private void Death()
+
+    public void TakeDamage(int damage)
     {
-        Destroy(this.gameObject);
+        currentHealth -= damage;
+
+        animator.SetTrigger("Hurt");
+  
+        if (currentHealth <=0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Enemy died!");
+        animator.SetBool("IsDead", true);
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
     }
 }

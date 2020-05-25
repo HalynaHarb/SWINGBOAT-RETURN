@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coins
   - Turn
+  - Enemy
+  - Turn updown
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,10 @@ public class Player : MonoBehaviour
 	public Animator animator;
 	private Rigidbody2D rb2d;
 	public HealthBar healthBar;
-	public float respawnDelay;
+	public float respawnDelay;	
+	private Player player;
+	Vector3 pushDirection;
+	Rigidbody2D rb;
 	
 
     // Start is called before the first frame update
@@ -34,6 +37,7 @@ public class Player : MonoBehaviour
 			currentHealth = 0;
 			GameObject.Find("Player").GetComponent<CharacterController2D>().enabled = false;
 			GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+			
 			Die();
 		}
 
@@ -43,7 +47,6 @@ public class Player : MonoBehaviour
 	{
 		currentHealth -= damage;
 		animator.SetTrigger("Hurt");
-  
         if (currentHealth <=0)
         {
             Die();
@@ -73,5 +76,13 @@ public class Player : MonoBehaviour
 		yield return 0;
 	}
 	
-	
+	private void OnCollisionEnter2D(Collision2D other)
+	{
+		if(other.gameObject.tag == "Enemy")
+		{
+			TakeDamage(30);
+			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
+
+		}
+	}
 }

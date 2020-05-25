@@ -8,7 +8,9 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     public bool MoveRight;
     public float speed;
-    int currentHealth;
+    int currentHealth;	
+
+    private Player player;
     
     // Start is called before the first frame update
     void Start()
@@ -47,15 +49,14 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
-        animator.SetTrigger("Hurt");
-  
+        animator.SetTrigger("Hurt");  
         if (currentHealth <=0)
         {
             Die();
         }
     }
 
+    
     void Die()
     {
         Debug.Log("Enemy died!");
@@ -64,4 +65,13 @@ public class Enemy : MonoBehaviour
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         this.enabled = false;
     }
+    private void OnCollisionEnter2D(Collision2D other)
+	{
+		if(other.gameObject.tag == "Enemy")
+		{
+			TakeDamage(30);
+			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
+
+		}
+	}
 }

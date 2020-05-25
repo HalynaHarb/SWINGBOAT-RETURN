@@ -8,16 +8,14 @@ public class PlayerMovement : MonoBehaviour
 	public Animator animator;
 
 	public float runSpeed = 40f;
-
+	public int state; 
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool crouch = false;
 	private Rigidbody2D rb2d;
 	
 	
-	
-	// Update is called once per frame
-	void Update () {
+	public void Update () {
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -27,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
+			state = 1;
 			animator.SetBool("IsJumping", true);
 		}
 
@@ -77,5 +76,6 @@ public class PlayerMovement : MonoBehaviour
                 yield return 0;
  
         }
+		
 	
 }
