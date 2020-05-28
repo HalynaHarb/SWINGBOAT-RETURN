@@ -8,6 +8,8 @@ TagManager:
   - Turn
   - Enemy
   - Turn updown
+  - Flight
+  - Minotaur
   layers:
   - Default
   - TransparentFX

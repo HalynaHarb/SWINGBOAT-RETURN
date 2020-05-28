@@ -6,9 +6,9 @@ public class Enemy : MonoBehaviour
 {
     public Animator animator;
     public int maxHealth = 100;
-    public bool MoveRight;
-    public float speed;
     int currentHealth;	
+    public int coinValue = 10;
+    public float speed;
 
     private Player player;
     
@@ -20,32 +20,9 @@ public class Enemy : MonoBehaviour
 
     void Update () 
     {
-        if(MoveRight) 
-        {
-            transform.Translate(2*Time.deltaTime * speed, 0,0);
-            transform.localScale = new Vector2 (3,3);
-
-        }
-        else {
-            transform.Translate(-2*Time.deltaTime*speed, 0,0);
-            transform.localScale = new Vector2 (-3,3);
-        }
  
     }
 
-    void OnTriggerEnter2D(Collider2D trig)
-    {
-        if(trig.gameObject.CompareTag("Turn"))
-        {
-            if(MoveRight){
-                MoveRight = false;
-            }
-            else 
-            {
-                MoveRight = true;
-            }
-        }
-    }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -61,10 +38,15 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy died!");
         animator.SetBool("IsDead", true);
+        ScoreManager.instance.ChangeScore(coinValue);
+        this.enabled = false;
+        //GetComponent<MovingMinotaur>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-        this.enabled = false;
+        Destroy(gameObject, 1);
+        
     }
+    
     private void OnCollisionEnter2D(Collision2D other)
 	{
 		if(other.gameObject.tag == "Enemy")

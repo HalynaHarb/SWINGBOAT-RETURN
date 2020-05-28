@@ -37,7 +37,6 @@ public class Player : MonoBehaviour
 			currentHealth = 0;
 			GameObject.Find("Player").GetComponent<CharacterController2D>().enabled = false;
 			GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
-			
 			Die();
 		}
 
