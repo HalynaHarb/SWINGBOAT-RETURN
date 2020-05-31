@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 	public void Update () {
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
+		
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 
@@ -27,11 +27,13 @@ public class PlayerMovement : MonoBehaviour
 			jump = true;
 			state = 1;
 			animator.SetBool("IsJumping", true);
+			FindObjectOfType<Audiio>().Play("Jump");
 		}
 
 		if (Input.GetButtonDown("Crouch"))
 		{
 			crouch = true;
+			
 		} else if (Input.GetButtonUp("Crouch"))
 		{
 			crouch = false;
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
 	public void OnCrouching(bool isCrouching) 
 	{
+		
 		animator.SetBool("IsCrouching", isCrouching);
 	}
 
@@ -51,7 +54,9 @@ public class PlayerMovement : MonoBehaviour
 	{
 		// Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+		
 		jump = false;
+		
 	}
 
 	private void OnTriggerEnter2D(Collider2D other) 

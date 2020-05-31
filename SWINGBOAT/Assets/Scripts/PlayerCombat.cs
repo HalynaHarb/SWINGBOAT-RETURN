@@ -19,6 +19,7 @@ public class PlayerCombat : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                FindObjectOfType<Audiio>().Play("PlayerAttack");
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
             }

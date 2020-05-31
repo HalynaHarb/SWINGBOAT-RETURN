@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
 	public void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
+		FindObjectOfType<Audiio>().Play("PlayerHurt");
 		animator.SetTrigger("Hurt");
         if (currentHealth <=0)
         {
@@ -54,7 +55,8 @@ public class Player : MonoBehaviour
 		healthBar.SetHealth(currentHealth);
 	}
 	void Die() {
-		Debug.Log("Player died!");
+		
+		FindObjectOfType<Audiio>().Play("PlayerDeath");
         animator.SetBool("IsDead", true);
 		Respawn();
 		

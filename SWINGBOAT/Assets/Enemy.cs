@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        FindObjectOfType<Audiio>().Play("EnemyHurt");
         animator.SetTrigger("Hurt");  
         if (currentHealth <=0)
         {
@@ -36,6 +37,7 @@ public class Enemy : MonoBehaviour
     
     void Die()
     {
+        FindObjectOfType<Audiio>().Play("EnemyDie");
         Debug.Log("Enemy died!");
         animator.SetBool("IsDead", true);
         ScoreManager.instance.ChangeScore(coinValue);
