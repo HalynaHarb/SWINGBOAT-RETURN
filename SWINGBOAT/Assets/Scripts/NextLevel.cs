@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-    public int index;
+    public GameObject FinishedLevel;
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.CompareTag("Player")){
-            SceneManager.LoadScene(index);
+            FinishedLevel.SetActive(true);
         }
     }
+
 }

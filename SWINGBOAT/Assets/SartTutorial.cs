@@ -8,7 +8,7 @@ public class SartTutorial : MonoBehaviour
 {
    public void Start()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void Quit()
