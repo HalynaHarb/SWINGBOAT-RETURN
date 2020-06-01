@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+	public GameObject Death;
 	public int maxHealth = 100;
 	public int currentHealth;
 	public Animator animator;
@@ -12,12 +12,15 @@ public class Player : MonoBehaviour
 	public HealthBar healthBar;
 	public float respawnDelay;	
 	private Player player;
+	public GameObject coins;
+	public GameObject coinado;
+	public GameObject healthBAR;
 	Vector3 pushDirection;
 	Rigidbody2D rb;
-	
 
-    // Start is called before the first frame update
-    void Start()
+
+	// Start is called before the first frame update
+	void Start()
     {
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
@@ -55,13 +58,18 @@ public class Player : MonoBehaviour
 		healthBar.SetHealth(currentHealth);
 	}
 	void Die() {
-		
+		Death.SetActive(true);
+		coins.SetActive(false);
+		coinado.SetActive(false);
+		healthBAR.SetActive(false);
+		Time.timeScale = 0.5f;
 		FindObjectOfType<Audiio>().Play("PlayerDeath");
         animator.SetBool("IsDead", true);
 		Respawn();
 		
 	}
 	public void Respawn(){
+		Time.timeScale = 1f;
 		StartCoroutine("RespawnCoroutine");
 	}
 	public IEnumerator RespawnCoroutine(){
