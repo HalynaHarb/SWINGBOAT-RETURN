@@ -153,4 +153,11 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.transform.tag == "MovingPlatform")
+		{
+			transform.parent = other.transform;
+		}
+	}
 }
