@@ -156,8 +156,12 @@ public class CharacterController2D : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.transform.tag == "MovingPlatform")
-		{
-			transform.parent = other.transform;
-		}
+        {
+            transform.parent = other.transform;
+        }
+        else
+        {
+            transform.parent = null;
+        }
 	}
 }
