@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
 	private Rigidbody2D rb2d;
 	public HealthBar healthBar;
 	public float respawnDelay;	
-	private Player player;
 	public GameObject coins;
 	public GameObject coinado;
 	public GameObject healthBAR;
@@ -90,13 +89,13 @@ public class Player : MonoBehaviour
 		if(other.gameObject.tag == "Enemy")
 		{
 			TakeDamage(30);
-			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
+			StartCoroutine(Knockback(0.002f, 100, transform.position));
 
 		}
 		if(other.gameObject.tag == "AI Flight")
 		{
 			TakeDamage(30);
-			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
+			StartCoroutine(Knockback(0.002f, 100, transform.position));
 
 		}
 	}
