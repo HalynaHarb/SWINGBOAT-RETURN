@@ -11,6 +11,7 @@ public class NextLevel : MonoBehaviour
     {
         if(col.CompareTag("Player")){
             FinishedLevel.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 

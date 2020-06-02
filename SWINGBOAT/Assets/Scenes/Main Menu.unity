@@ -365,8 +365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2, y: 0}
+  m_AnchoredPosition: {x: 0.5098877, y: -0.028198242}
+  m_SizeDelta: {x: 1.0197144, y: 0.056427002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485025016
 MonoBehaviour:
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
+  m_Color: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0.79607844}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -807,8 +807,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 13, y: 0}
-  m_SizeDelta: {x: 28, y: 0}
+  m_AnchoredPosition: {x: 0, y: -11.299988}
+  m_SizeDelta: {x: 2, y: 22.532593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134227007
 MonoBehaviour:
@@ -835,13 +835,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34509805, g: 0.28235295, b: 0.5647059, a: 0.392}
+  m_Color: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 0.392}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c2d3f0e1482798049ad07448fd2f208b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0348fa079b0cee84b8307072b3d811ef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -871,6 +871,7 @@ GameObject:
   - component: {fileID: 1479001876}
   - component: {fileID: 1479001875}
   - component: {fileID: 1479001874}
+  - component: {fileID: 1479001878}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -959,6 +960,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1479001878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479001873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb282718ad98f74c900c090850b0964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1507292990
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,8 +1006,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1000, y: 27.503}
-  m_SizeDelta: {x: 1104.5964, y: 391.07}
+  m_AnchoredPosition: {x: -1407, y: 142.77}
+  m_SizeDelta: {x: 322.88696, y: 160.5437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1507292992
 MonoBehaviour:
@@ -1017,7 +1030,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: fd540611fb8493b47ac40b84d30021d5, type: 3}
-    m_FontSize: 70
+    m_FontSize: 59
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1028,8 +1041,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "FEEDHALL REPRESENTORIES:\n\nSWINGBOAT comporation\nGALYNA \nYAROSLAV GAY\nSERHIY
-    GUY\nLESYK NE SPYT\nA DE BLYAT YARIK>>?"
+  m_Text: 'FEEDHALL REPRESENTORIES:
+
+
+    SwingBoat team:
+
+    Galya "The Bee"
+
+    Slav
+    "A UKRAINI"
+
+    Serhiy "GWOlF"
+
+    Lesyk "SceneManager"
+
+    Yaro "Peace"'
 --- !u!222 &1507292993
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1073,8 +1099,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37, y: -290}
-  m_SizeDelta: {x: 179.36356, y: 73.4507}
+  m_AnchoredPosition: {x: -586, y: -209}
+  m_SizeDelta: {x: 191.49646, y: 62.57202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704844796
 MonoBehaviour:
@@ -1096,7 +1122,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
     m_HighlightedColor: {r: 0.7254902, g: 0.48235294, b: 0.9529412, a: 1}
     m_PressedColor: {r: 0.3882353, g: 0, b: 0.9529412, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
