@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 6}
-  m_SizeDelta: {x: 207.47711, y: 65.07878}
+  m_AnchoredPosition: {x: -640.5, y: -9.800013}
+  m_SizeDelta: {x: 284.68777, y: 93.45833}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &340602928
 MonoBehaviour:
@@ -381,13 +381,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4392157, g: 0.7411765, b: 1, a: 0.79607844}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c2d3f0e1482798049ad07448fd2f208b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07bf33c46c4dc614fa13bc03f9da30be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -634,8 +634,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785439561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 237, z: -10}
-  m_LocalScale: {x: 0.5633688, y: 0.5000812, z: 1}
+  m_LocalPosition: {x: -316.3, y: 241.59998, z: -10}
+  m_LocalScale: {x: 0.7730212, y: 0.7181565, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -675,8 +675,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.2201e-10, y: -98}
-  m_SizeDelta: {x: 207.47705, y: 72.23476}
+  m_AnchoredPosition: {x: -668.5, y: -124.000015}
+  m_SizeDelta: {x: 228.7984, y: 87.23665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940145498
 MonoBehaviour:
@@ -807,8 +807,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 27, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 13, y: 0}
+  m_SizeDelta: {x: 28, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134227007
 MonoBehaviour:
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4392157, g: 0.7411765, b: 1, a: 0.392}
+  m_Color: {r: 0.34509805, g: 0.28235295, b: 0.5647059, a: 0.392}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1016,8 +1016,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: fd540611fb8493b47ac40b84d30021d5, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1025,8 +1025,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "FEEDHALL REPRESENTORIES:\n\nSWINGBOAT comporation\nGALYNA \nYAROSLAV GAY\nSERHIY
     GUY\nLESYK NE SPYT\nA DE BLYAT YARIK>>?"
@@ -1213,8 +1213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00007248, y: 122}
-  m_SizeDelta: {x: 286.98846, y: 108.93588}
+  m_AnchoredPosition: {x: -586, y: 136}
+  m_SizeDelta: {x: 393.7885, y: 156.44064}
   m_Pivot: {x: 0.49999982, y: 0.5}
 --- !u!114 &1762169550
 MonoBehaviour:
