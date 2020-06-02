@@ -13,6 +13,7 @@ public class Coin : MonoBehaviour
         {
             if (trigger == false)
             {
+                FindObjectOfType<Audiio>().Play("Coin");
                 ScoreManager.instance.ChangeScore(coinValue);
             }
         }
