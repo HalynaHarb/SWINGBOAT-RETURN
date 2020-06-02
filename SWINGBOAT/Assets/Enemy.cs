@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿  
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -42,7 +43,6 @@ public class Enemy : MonoBehaviour
         animator.SetBool("IsDead", true);
         ScoreManager.instance.ChangeScore(coinValue);
         this.enabled = false;
-        //GetComponent<MovingMinotaur>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         Destroy(gameObject, 1);
@@ -52,6 +52,12 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
 	{
 		if(other.gameObject.tag == "Enemy")
+		{
+			TakeDamage(30);
+			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
+
+		}
+        if(other.gameObject.tag == "AI Flight")
 		{
 			TakeDamage(30);
 			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));

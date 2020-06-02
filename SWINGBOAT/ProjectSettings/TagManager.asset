@@ -11,6 +11,8 @@ TagManager:
   - Flight
   - Minotaur
   - MovingPlatform
+  - A*
+  - AI Flight
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - Coins
   - Enemy
   - Ground
-  - 
+  - For AI Enemy
   - 
   - 
   - 

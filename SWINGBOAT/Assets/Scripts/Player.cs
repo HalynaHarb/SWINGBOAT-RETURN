@@ -93,5 +93,11 @@ public class Player : MonoBehaviour
 			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
 
 		}
+		if(other.gameObject.tag == "AI Flight")
+		{
+			TakeDamage(30);
+			StartCoroutine(player.Knockback(0.002f, 100, player.transform.position));
+
+		}
 	}
 }
