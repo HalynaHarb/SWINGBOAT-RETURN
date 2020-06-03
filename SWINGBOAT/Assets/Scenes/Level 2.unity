@@ -10934,20 +10934,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c84fb56b31be74eaaa046160e29aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FinishedLevel: {fileID: 0}
---- !u!65 &564804953
-BoxCollider:
+  FinishedLevel: {fileID: 1392899331}
+--- !u!61 &564804953
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564804951}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007041931, y: -0.14782107}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.1666666}
+    newSize: {x: 1.0625, y: 1.1666666}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19987488, y: 0.8459456, z: 0.2}
-  m_Center: {x: 0.022117615, y: -0.16036046, z: 0}
+  m_Size: {x: 0.23188782, y: 0.87102437}
+  m_EdgeRadius: 0
 --- !u!4 &570245835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4111806976974172, guid: dd6c6c0f2cff23a488ed09ad8ab8c2dc,
