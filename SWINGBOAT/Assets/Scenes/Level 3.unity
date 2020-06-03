@@ -23832,9 +23832,8 @@ MonoBehaviour:
   dialogue:
     name: Chapter 3
     sentences:
-    - 
-    - 
-    - 
+    - If Meliodas conquer The FeedHall, the black Wizard will not stand a chance
+      against this truly powerful knight.
 --- !u!114 &1434599901
 MonoBehaviour:
   m_ObjectHideFlags: 0

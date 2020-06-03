@@ -1057,9 +1057,12 @@ MonoBehaviour:
   dialogue:
     name: Chapter 2
     sentences:
-    - 
-    - 
-    - 
+    - "Meliodas didnt know what danger awaits for him in The FeedHall, but it won't
+      break his will to protect The Kingdom.\r"
+    - Down there..
+    - in the dungeon are some tremendously dangerous, blood-curdling, necromantic
+      creatures, such as minotaurs and flying cyclops, who can easily destroy a big
+      group of knights.
 --- !u!114 &139594619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31052,7 +31055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0.6156863}
+  m_Color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0.78039217}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -39979,7 +39982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.21176471}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78039217}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
