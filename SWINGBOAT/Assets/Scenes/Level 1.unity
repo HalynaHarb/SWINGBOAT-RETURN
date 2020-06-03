@@ -22613,7 +22613,7 @@ MonoBehaviour:
   sounds:
   - name: PlayerDeath
     clip: {fileID: 8300000, guid: bf47f16a1492cf04c96051602027710e, type: 3}
-    volume: 1
+    volume: 0.428
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22622,7 +22622,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: cb33ba80c0c3ef04ea860e25d2341822, type: 3}
-    volume: 0.966
+    volume: 0.458
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22631,7 +22631,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jump
     clip: {fileID: 8300000, guid: 184eb5d1b5d666b45a6cad80e85be2c5, type: 3}
-    volume: 0.592
+    volume: 0.5
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22640,7 +22640,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: PlayerWalk
     clip: {fileID: 8300000, guid: d8e5e1044a5b29c4bb0cca7994a65401, type: 3}
-    volume: 0.659
+    volume: 0.522
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22649,7 +22649,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Crouch
     clip: {fileID: 8300000, guid: dc3936e2ab324494ba588376678b98d5, type: 3}
-    volume: 0.815
+    volume: 0.496
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22658,7 +22658,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: PlayerAttack
     clip: {fileID: 8300000, guid: af344b59319958947b86f7cbfc8a45cb, type: 3}
-    volume: 0.84
+    volume: 0.526
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22667,7 +22667,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: PlayerHurt
     clip: {fileID: 8300000, guid: 80b4420966369114fb8733933e1d5174, type: 3}
-    volume: 0.87
+    volume: 0.547
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22676,7 +22676,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: EnemyHurt
     clip: {fileID: 8300000, guid: 4a497fad3029ce64a860cab8e9360a6b, type: 3}
-    volume: 0.744
+    volume: 0.539
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22685,7 +22685,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: EnemyDie
     clip: {fileID: 8300000, guid: a456a8b6fad5a244d9abcdaa6cccd75a, type: 3}
-    volume: 1
+    volume: 0.53
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
@@ -22694,7 +22694,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Coin
     clip: {fileID: 8300000, guid: b860f2174b98d6745b6a7fc55b6f1157, type: 3}
-    volume: 1
+    volume: 0.496
     volumeVariance: 0.1
     pitch: 0.98
     pitchVariance: 0.1
